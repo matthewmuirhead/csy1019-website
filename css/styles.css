@@ -46,6 +46,14 @@ h2, h3, h4 {
   display: block;
 }
 
+.menu:hover .search-box {
+  display: none;
+}
+
+.mobile-nav-tree:hover .search-box {
+  display: none;
+}
+
 .mobile-nav-tree:hover {
   display: block;
 }
