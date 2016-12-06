@@ -29,6 +29,9 @@ h2, h3, h4 {
   padding-left: 6em;
   text-align: left;
   font-size: 1.5em;
+  box-shadow: 0px -7px 10px 10px #03A15F;
+  position: relative;
+  z-index: 10;
 }
 
 .nav-mobile {
@@ -40,6 +43,9 @@ h2, h3, h4 {
   padding-left: 6em;
   text-align: left;
   font-size: 1.5em;
+  box-shadow: 0px -7px 10px 10px #03A15F;
+  position: relative;
+  z-index: 10;
 }
 
 .menu:hover .mobile-nav-tree {
@@ -155,31 +161,37 @@ nav span:active {
 .home-button {
  color: #79C7D5;
  box-shadow: 0px -3px 0px 0px #79C7D5, 0px -5px 0px #79C7D5;
+ padding-bottom: 0.5em;
 }
 
 .plan-your-visit-button {
   color: #2AAB9D;
   box-shadow: 0px -3px 0px 0px #2AAB9D, 0px -5px 0px #2AAB9D;
+  padding-bottom: 0.5em;
 }
 
 .bookings-button {
  color: #AFCF3E;
  box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
+ padding-bottom: 0.5em;
 }
 
 .events-button {
  color: #F2BA3F;
- box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F
+ box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
+ padding-bottom: 0.5em;
 }
 
 .animals-button {
  color: #EDD722;
  box-shadow: 0px -3px 0px 0px #EDD722, 0px -5px 0px #EDD722;
+ padding-bottom: 0.5em;
 }
 
 .shop-button {
  color: #D27937;
  box-shadow: 0px -3px 0px 0px #D27937, 0px -5px 0px #D27937;
+ padding-bottom: 0.5em;
 }
 
 .opening-times {
@@ -199,7 +211,7 @@ nav span:active {
 
 .section-header {
   text-align: left;
-  box-shadow: 0px 3px #006139, 10px 0px 0px #AFB80F, -10px 0px 0px #AFB80F;
+  box-shadow: 0px 3px #006139;
   position: relative;
   width: 93%;
   margin-left: 50%;
@@ -212,7 +224,7 @@ nav span:active {
   font-size: 1.5em;
 }
 
-.day-planner-desktop {
+.horizontal-boxes {
   position: relative;
   margin-left: 50%;
   transform: translate(-50%);
@@ -240,7 +252,7 @@ nav span:active {
 	width:16.666%;
 }
 
-.day-planner-mobile {
+.horizontal-boxes-mobile {
   position: relative;
   margin-left: 50%;
   transform: translate(-50%);
@@ -427,6 +439,35 @@ a:active {
   height: auto;
 }
 
+.slideshow-container {
+  height: 40em;
+  width: 84.7%;
+  background-color: #fef2c9;
+  position: relative;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding: 1em;
+}
+
+.slideshow {
+
+}
+
+.caption {
+
+}
+
+.events-calendar {
+  height: 20em;
+  width: 84.7%;
+  background-color: #fef2c9;
+  position: relative;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding: 1em;
+  line-height: 1.5em;
+}
+
 @media (max-width: 70em) {
   .search-box {
     display: none;
@@ -441,10 +482,10 @@ a:active {
     display: block;
     padding-top: 0.75em;
   }
-  .day-planner-desktop {
+  .horizontal-boxes {
     display: none;
   }
-  .day-planner-mobile {
+  .horizontal-boxes-mobile {
     display: block;
   }
   .find-us {
@@ -483,10 +524,10 @@ a:active {
   .aside {
     width: 20%;
   }
-  .day-planner-desktop {
+  .horizontal-boxes {
     display: table;
   }
-  .day-planner-mobile {
+  .horizontal-boxes-mobile {
     display: none;
   }
   .park-map-table-desktop {
