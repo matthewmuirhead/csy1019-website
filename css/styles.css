@@ -171,7 +171,6 @@ nav span:active {
 .home-button {
  color: #79C7D5;
  box-shadow: 0px -3px 0px 0px #79C7D5, 0px -5px 0px #79C7D5;
- margin-left: 0.2em;
  padding-top: 0.3em;
  padding-bottom: 0.4em;
  background: #03A15F;
@@ -180,7 +179,6 @@ nav span:active {
 .plan-your-visit-button {
   color: #AFCF3E;
   box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
-  margin-left: 0.2em;
   padding-top: 0.3em;
   padding-bottom: 0.4em;
   background: #03A15F;
@@ -189,7 +187,6 @@ nav span:active {
 .bookings-button {
   color: #F2BA3F;
   box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
-  margin-left: 0.2em;
   padding-top: 0.3em;
   padding-bottom: 0.4em;
   background: #03A15F;
@@ -198,7 +195,6 @@ nav span:active {
 .events-button {
   color: #EDD722;
   box-shadow: 0px -3px 0px 0px #EDD722, 0px -5px 0px #EDD722;
-  margin-left: 0.2em;
   padding-top: 0.3em;
   padding-bottom: 0.4em;
   background: #03A15F;
@@ -207,7 +203,6 @@ nav span:active {
 .animals-button {
   color: #D27937;
   box-shadow: 0px -3px 0px 0px #D27937, 0px -5px 0px #D27937;
-  margin-left: 0.2em;
   padding-top: 0.3em;
   padding-bottom: 0.4em;
   background: #03A15F;
@@ -216,7 +211,6 @@ nav span:active {
 .shop-button {
   color: #5B55A3;
   box-shadow: 0px -3px 0px 0px #5B55A3, 0px -5px 0px #5B55A3;
-  margin-left: 0.2em;
   padding-top: 0.3em;
   padding-bottom: 0.4em;
   background: #03A15F;
@@ -701,7 +695,7 @@ textarea {
 
 .tandc {
   text-align: justify;
-  padding: 2em;
+  padding: 3em;
   padding-top: 0;
   line-height: 1.5em;
 }
@@ -781,6 +775,9 @@ textarea {
    padding: 0.5em;
    padding-top: 0em;
    padding-bottom: 0.2em;
+  }
+  .tandc {
+    padding: 2em;
   }
 }
 
