@@ -2,18 +2,141 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 27em;
   margin: 0;
   line-height: 100%;
   text-align: center;
   font-family: sans-serif;
   font-size: 1em;
   color: #333;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
 }
 
 h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+}
+
+body {
+
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+
+@media (min-width: 43.75em) {
+  body {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */
+  }
+}
+
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */
+}
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */
+}
+
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
+}
+
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+    /* (22px / 18px */
+  }
+}
+
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+}
+
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */
+  }
 }
 
 .line-height-1-5em {
@@ -32,6 +155,8 @@ h2, h3, h4 {
   box-shadow: 0px -7px 10px 10px #03A15F;
   position: relative;
   z-index: 10;
+  top: 0;
+  width: 94%;
 }
 
 .nav-mobile {
@@ -400,17 +525,46 @@ nav span:active {
   padding-left: 2em;
   height: 10%;
   max-height: 100px;
-  top:-4.2em;
+  top: -4em;
   overflow: visible;
   z-index: 98;
 }
 
-.page-heading {
+.page-heading-home {
   position: relative;
   width: 85%;
   margin-left: 50%;
   transform: translate(-50%);
-  background-color: #fef2c9;
+  background-image: url(../images/claybrook-banner-home.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 5em;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+.page-heading-plv {
+  position: relative;
+  width: 85%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  background-image: url(../images/claybrook-banner-plan.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 5em;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+.page-heading-booking {
+  position: relative;
+  width: 85%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  background-image: url(../images/claybrook-banner-booking.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 5em;
   padding: 15px;
   font-size: 1.5em;
 }
@@ -584,6 +738,107 @@ a.twitter-timeline:focus {
   top: -30px;
 }
 
+.ticket-selction, .payment {
+  border: solid black 1px;
+  padding: 1em;
+  min-width: 15em;
+  max-width: 50em;
+  width: 80%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding-bottom: 2.7em;
+  background-color: #fef2c9;
+}
+
+.payment {
+  margin-bottom: 1.5em;
+}
+
+.form-title {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 0.5em;
+}
+
+label {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+
+textarea {
+  resize: vertical;
+  width: 65%;
+  height: 200px;
+  max-height: 500px;
+}
+
+.number-of-visitors {
+  width: 3em;
+}
+
+.number-of-visitors-label {
+  width: 4em;
+  text-align: right;
+  margin-top: 2px;
+
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+.form-title {
+  text-align: right;
+  margin-top: 2px;
+  float: left;
+}
+
+.form-name {
+  width: 65%;
+}
+
+.submit-button {
+  float: right;
+  margin-top: 0.4em;
+}
+
+.button {
+  padding: 0.5em;
+  float: right;
+  font-family: "Montserrat";
+  background-color: #333;
+  color: #f1f2f3;
+}
+
+.tandc {
+  text-align: justify;
+  padding: 1em;
+  padding-top: 0;
+  line-height: 1.5em;
+}
+
+.select-your-tickets {
+  padding-top: 0em;
+  text-align: left;
+  padding-left: 3em;
+}
+
+.order-items {
+  text-align: left;
+  padding-left: 6.0em;
+}
+
+.option-list {
+  margin-top: 1em;
+}
+
+.total-price {
+  padding-top: 0em;
+  text-align: left;
+  padding-left: 5.4em;
+}
+
 @media (max-width: 70em) {
   .search-box {
     display: none;
@@ -625,6 +880,15 @@ a.twitter-timeline:focus {
     display: flex;
     margin-top: 1em;
   }
+  .page-heading-home {
+    min-height: 3em;
+  }
+  .page-heading-plv {
+    min-height: 3em;
+  }
+  .page-heading-booking {
+    min-height: 3em;
+  }
 }
 
 @media (min-width: 60em) {
@@ -657,5 +921,11 @@ a.twitter-timeline:focus {
   }
   .nav-desktop {
     display: block;
+  }
+}
+
+@media (max-width: 32em) {
+  .search-box {
+    display: none;
   }
 }
