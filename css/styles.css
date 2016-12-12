@@ -146,9 +146,9 @@ blockquote {
 .nav-desktop {
   order: -1;
   padding-bottom: 0.3em;
-  padding-top: .8em;
+  padding-top: 0.4em;
   background: #03A15F;
-  height: 1em;
+  height: 1.4em;
   padding-left: 6em;
   text-align: left;
   font-size: 1.5em;
@@ -525,7 +525,7 @@ nav span:active {
   padding-left: 2em;
   height: 10%;
   max-height: 100px;
-  top: -4em;
+  top: -4.15em;
   overflow: visible;
   z-index: 98;
 }
@@ -874,6 +874,7 @@ textarea {
   .page-heading-booking {
     min-height: 3em;
   }
+
 }
 
 @media (min-width: 60em) {
@@ -912,11 +913,5 @@ textarea {
 @media (max-width: 32em) {
   .search-box {
     display: none;
-  }
-}
-
-@media (max-width: 85em) {
-  .page-heading-home, .page-heading-plv, .page-heading-booking {
-    min-height: 5em;
   }
 }
