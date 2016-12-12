@@ -10,133 +10,16 @@ body {
   font-size: 1em;
   color: #333;
   font-family: 'Roboto', sans-serif;
-  font-size: 100%;
+  /*font-size: 100%;
   font-size: 1em;
   /* equivalent to 16px */
-  line-height: 1.25;
+  /*line-height: 1.25;*/
   /* equivalent to 20px */
 }
 
 h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-}
-
-body {
-
-}
-
-body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
-  font-size-adjust: 0.5;
-}
-
-
-@media (min-width: 43.75em) {
-  body {
-    font-size: 1em;
-    /* equivalent to 16px */
-    line-height: 1.375;
-    /* equivalent to 22px */
-  }
-}
-
-h1 {
-  font-size: 2em;
-  /* 2x body copy size = 32px */
-  line-height: 1.25;
-  /* 45px / 36px */
-}
-
-@media (min-width: 43.75em) {
-  h1 {
-    font-size: 2.5em;
-    /* 2.5x body copy size = 40px */
-    line-height: 1.125;
-  }
-}
-
-@media (min-width: 56.25em) {
-  h1 {
-    font-size: 3em;
-    /* 3x body copy size = 48px */
-    line-height: 1.05;
-    /* keep to a multiple of the 20px line height and something more appropriate for display headings */
-  }
-}
-
-h2 {
-  font-size: 1.625em;
-  /* 1.625x body copy size = 26px */
-  line-height: 1.15384615;
-  /* 30px / 26px */
-}
-
-@media (min-width: 43.75em) {
-  h2 {
-    font-size: 2em;
-    /* 2x body copy size = 32px */
-    line-height: 1.25;
-  }
-}
-
-@media (min-width: 56.25em) {
-  h2 {
-    font-size: 2.25em;
-    /* 2.25x body copy size = 36px */
-    line-height: 1.25;
-  }
-}
-
-h3 {
-  font-size: 1.375em;
-  /* 1.375x body copy size = 22px */
-  line-height: 1.13636364;
-  /* 25px / 22px */
-}
-
-@media (min-width: 43.75em) {
-  h3 {
-    font-size: 1.5em;
-    /* 1.5x body copy size = 24px */
-    line-height: 1.25;
-  }
-}
-
-@media (min-width: 56.25em) {
-  h3 {
-    font-size: 1.75em;
-    /* 1.75x body copy size = 28px */
-    line-height: 1.25;
-  }
-}
-
-h4 {
-  font-size: 1.125em;
-  /* 1.125x body copy size = 18px */
-  line-height: 1.11111111;
-}
-
-@media (min-width: 43.75em) {
-  h4 {
-    line-height: 1.22222222;
-    /* (22px / 18px */
-  }
-}
-
-blockquote {
-  font-size: 1.25em;
-  /* 20px / 16px */
-  line-height: 1.25;
-  /* 25px / 20px */
-}
-
-@media (min-width: 43.75em) {
-  blockquote {
-    font-size: 1.5em;
-    /* 24px / 16px = */
-    line-height: 1.45833333;
-    /* 35px / 24px */
-  }
 }
 
 .line-height-1-5em {
@@ -146,9 +29,9 @@ blockquote {
 .nav-desktop {
   order: -1;
   padding-bottom: 0.3em;
-  padding-top: 0.4em;
+  padding-top: 0.7em;
   background: #03A15F;
-  height: 1.4em;
+  height: 1em;
   padding-left: 6em;
   text-align: left;
   font-size: 1.5em;
@@ -156,7 +39,7 @@ blockquote {
   position: relative;
   z-index: 10;
   top: 0;
-  width: 94%;
+  width: auto;
 }
 
 .nav-mobile {
@@ -195,12 +78,13 @@ blockquote {
   z-index: 99;
   list-style-type: none;
   line-height: 2.5em;
-  background: #03A15F;
-  width: 7em;
+  left: -0.5em;
+  width: 7.5em;
   text-align: left;
   padding: 0.5em;
   margin: 0;
   cursor: pointer;
+  top: -0.25em;
 }
 
 .menu {
@@ -212,6 +96,7 @@ blockquote {
 .menu li:hover {
   background-color: #048751;
   cursor: pointer;
+  animation: animation-rotate 0.5s linear 1;
 }
 
 .menu li:active {
@@ -286,37 +171,55 @@ nav span:active {
 .home-button {
  color: #79C7D5;
  box-shadow: 0px -3px 0px 0px #79C7D5, 0px -5px 0px #79C7D5;
- padding-bottom: 0.5em;
+ margin-left: 0.2em;
+ padding-top: 0.3em;
+ padding-bottom: 0.4em;
+ background: #03A15F;
 }
 
 .plan-your-visit-button {
-  color: #2AAB9D;
-  box-shadow: 0px -3px 0px 0px #2AAB9D, 0px -5px 0px #2AAB9D;
-  padding-bottom: 0.5em;
+  color: #AFCF3E;
+  box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
+  margin-left: 0.2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.4em;
+  background: #03A15F;
 }
 
 .bookings-button {
- color: #AFCF3E;
- box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
- padding-bottom: 0.5em;
+  color: #F2BA3F;
+  box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
+  margin-left: 0.2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.4em;
+  background: #03A15F;
 }
 
 .events-button {
- color: #F2BA3F;
- box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
- padding-bottom: 0.5em;
+  color: #EDD722;
+  box-shadow: 0px -3px 0px 0px #EDD722, 0px -5px 0px #EDD722;
+  margin-left: 0.2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.4em;
+  background: #03A15F;
 }
 
 .animals-button {
- color: #EDD722;
- box-shadow: 0px -3px 0px 0px #EDD722, 0px -5px 0px #EDD722;
- padding-bottom: 0.5em;
+  color: #D27937;
+  box-shadow: 0px -3px 0px 0px #D27937, 0px -5px 0px #D27937;
+  margin-left: 0.2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.4em;
+  background: #03A15F;
 }
 
 .shop-button {
- color: #D27937;
- box-shadow: 0px -3px 0px 0px #D27937, 0px -5px 0px #D27937;
- padding-bottom: 0.5em;
+  color: #5B55A3;
+  box-shadow: 0px -3px 0px 0px #5B55A3, 0px -5px 0px #5B55A3;
+  margin-left: 0.2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.4em;
+  background: #03A15F;
 }
 
 .opening-times {
@@ -571,7 +474,7 @@ a:active {
   float: right;
   width: 12px;
   height: auto;
-  padding-right: 3em;
+  padding-right: 2em;
   cursor: pointer;
 }
 
@@ -798,7 +701,7 @@ textarea {
 
 .tandc {
   text-align: justify;
-  padding: 1em;
+  padding: 2em;
   padding-top: 0;
   line-height: 1.5em;
 }
@@ -874,7 +777,11 @@ textarea {
   .page-heading-booking {
     min-height: 3em;
   }
-
+  .home-button, .plan-your-visit-button, .bookings-button, .events-button, .animals-button, .shop-button {
+   padding: 0.5em;
+   padding-top: 0em;
+   padding-bottom: 0.2em;
+  }
 }
 
 @media (min-width: 60em) {
@@ -914,4 +821,16 @@ textarea {
   .search-box {
     display: none;
   }
+}
+
+@keyframes animation-rotate {
+	0% {
+		transform: rotateX(0deg);
+	}
+	50% {
+		transform: rotateX(45deg);
+	}
+  100% {
+		transform: rotateX(0deg);
+	}
 }
