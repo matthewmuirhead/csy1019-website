@@ -530,43 +530,28 @@ nav span:active {
   z-index: 98;
 }
 
-.page-heading-home {
+.page-heading-home,.page-heading-plv, .page-heading-booking {
   position: relative;
   width: 85%;
   margin-left: 50%;
   transform: translate(-50%);
-  background-image: url(../images/claybrook-banner-home.png);
   background-size: cover;
   background-position: center;
-  min-height: 5em;
+  min-height: 8em;
   padding: 15px;
   font-size: 1.5em;
+}
+
+.page-heading-home {
+  background-image: url(../images/claybrook-banner-home.png);
 }
 
 .page-heading-plv {
-  position: relative;
-  width: 85%;
-  margin-left: 50%;
-  transform: translate(-50%);
   background-image: url(../images/claybrook-banner-plan.png);
-  background-size: cover;
-  background-position: center;
-  min-height: 5em;
-  padding: 15px;
-  font-size: 1.5em;
 }
 
 .page-heading-booking {
-  position: relative;
-  width: 85%;
-  margin-left: 50%;
-  transform: translate(-50%);
   background-image: url(../images/claybrook-banner-booking.png);
-  background-size: cover;
-  background-position: center;
-  min-height: 5em;
-  padding: 15px;
-  font-size: 1.5em;
 }
 
 .title {
@@ -927,5 +912,11 @@ textarea {
 @media (max-width: 32em) {
   .search-box {
     display: none;
+  }
+}
+
+@media (max-width: 85em) {
+  .page-heading-home, .page-heading-plv, .page-heading-booking {
+    min-height: 5em;
   }
 }
